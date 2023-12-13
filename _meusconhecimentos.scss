@@ -1,0 +1,32 @@
+.conhecimento{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 15rem auto 0.5rem auto;
+    border-color: $brancogelo;
+
+}
+
+.conhecimento h3{
+    font-family: $fontmono;
+    width: 19ch;
+    border-right: 0.2rem solid;
+    white-space: nowrap;
+    color: $brancogelo;
+    overflow: hidden;
+    font-size: 1.5rem;
+    animation: typing 2s steps(21), blinking 0.5s infinite step-end alternate; //animação de escrita na palavra "Meus Conhecimentos"
+
+}
+@keyframes typing {
+
+    from{
+        width: 0px;
+    }
+}
+@keyframes blinking{
+    50% {
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&family=Noto+Sans&family=Poppins:wght@800&family=Press+Start+2P&family=Roboto+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&family=Noto+Sans&family=Poppins:wght@800&family=Roboto+Condensed:wght@300&display=swap');
+
+@import './variaveis';
+@import './barrarolagem';
+@import './meusconhecimentos';
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: $brancogelo;
+    color: $brancogelo;
+    width: 100%;
+    height: 100vh;
+}
+
+
+main {
+    max-width: 100%;
+    background-color: $cinzaescuro;
+    height: 70rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: $fontpadrao;
+}
+
+
+.web-developer{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+
+h1{
+    text-align: start;
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+    font-size: 10rem;
+}
+
+
+h3{
+    text-align:center;
+    max-width: 100%;
+    font-size: 1rem;
+    font-family: $fontmono;
+    color: $brancogelo;
+}
+
+
+.redes-sociais {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+}
+
+.redes-sociais {
+
+    a {
+        margin: 0 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.redes-sociais{
+
+
+    img {   
+        max-width: 100%; // Garante que as imagens não ultrapassem o contêiner 
+        height: 3rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:hover{
+            opacity: 0.5; // Animação nas imagens das redes sociais
+            rotate: (10deg);
+        }
+    }
+} 
+
+.icones{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones{
+
+    img{
+        display: flex;
+        margin: 0 2rem;
+        max-width: 100%;
+        cursor: pointer;
+        height: 5rem;
+        transition: all 0.4s ease;
+        animation: floatAnimation 2s infinite alternate;
+        &:hover{
+            opacity: 0.5; // Animação nas imagens das tecnologias
+        }
+
+    
+
+        @keyframes floatAnimation{
+            from {
+                transform: translateY(0);
+            }
+
+            to{
+                transform: translateY(-15px);
+
+            }
+        }
+        
+    }
+
+}
+
+footer{
+    display:flex;
+    max-width: 100%;
+    margin: 5rem auto 0 auto;
+    align-items:center;
+    padding: 2rem;
+    flex-direction: column;
+    color: $cinzaescuro;
+    font-family: montserrat light;
+    background-color: $brancogelo;
+}
+
+//Aqui vai a adaptação para deixar o site responsivo
+@media (max-width: 768px) {
+
+    body {
+        background-color: $brancogelo;
+        color: $brancogelo;
+        font-size: 16px; 
+      }
+      
+      main {
+        height: auto;
+      }
+      
+      h1 {
+        font-size: 5rem;
+      }
+      
+      h3{
+margin-top: 1.5rem;
+      }
+
+      .redes-sociais img {
+        height: 3rem;
+      }
+      
+      .icones img {
+        height: 3rem;
+      }
+
+
+}

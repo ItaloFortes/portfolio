@@ -1,0 +1,11 @@
+//Estilização da barra de rolagem do site.
+
+::-webkit-scrollbar{
+    background-color: $roxovivo;
+    width: 0.5rem;
+
+   
+}
+::-webkit-scrollbar-thumb{
+    background-color: $brancogelo;
+}
